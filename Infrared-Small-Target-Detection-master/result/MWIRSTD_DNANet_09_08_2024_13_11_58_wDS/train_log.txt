@@ -1,0 +1,25 @@
+time:--09/08/2024 13:11:58
+model:--DNANet
+channel_size:--three
+backbone:--resnet_18
+deep_supervision:--True
+dataset:--MWIRSTD
+mode:--TXT
+test_size:--0.5
+root:--dataset/
+suffix:--_masks.png
+split_method:--50_50
+workers:--4
+in_channels:--3
+base_size:--256
+crop_size:--256
+epochs:--800
+start_epoch:--0
+train_batch_size:--4
+test_batch_size:--4
+min_lr:--1e-05
+optimizer:--Adagrad
+scheduler:--CosineAnnealingLR
+lr:--0.05
+gpus:--1
+save_dir:--MWIRSTD_DNANet_09_08_2024_13_11_58_wDS
